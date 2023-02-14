@@ -1,0 +1,2 @@
+WebForms.csproj: Build target: Clean
+[11:42:38]E:								 [src\eShopLegacyWebForms\eShopLegacyWebForms.csproj] C:\TeamCity\buildAgent\work\326ab781f8614fac\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj(407, 3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.

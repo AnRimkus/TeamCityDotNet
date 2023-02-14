@@ -1,0 +1,713 @@
+Build 'TeamCityDotNet / Build' #1, default branch 'main'
+Triggered 2023-02-13 10:02:43 by 'ra'
+Started 2023-02-13 10:02:53 on agent 'ra22-vm'
+Finished 2023-02-13 10:03:50 with status FAILURE 'Compilation error: src\eShopLegacyWebForms\eShopLegacyWebForms.csproj (new)'
+VCS revisions: 'TeamCityDotNet_HttpsGithubComAnRimkusTeamCityDotNetGitRefsHeadsMain' (Git, instance id 1): '1f8e58a4cfda6d984a63f7c8899f92e217b7a098' (branch: 'refs/heads/main')
+TeamCity URL http://localhost/viewLog.html?buildId=1&buildTypeId=TeamCityDotNet_Build 
+TeamCity server version is 2022.10.1 (build 116934), server timezone: UTC
+
+[10:02:43]E: bt1 (1m:06s)
+[10:02:43]i: TeamCity server version is 2022.10.1 (build 116934)
+[10:02:44] : The build is removed from the queue to be prepared for the start
+[10:02:44] : Collecting changes in 1 VCS root (7s)
+[10:02:44] :	 [Collecting changes in 1 VCS root] VCS Root details
+[10:02:44] :		 [VCS Root details] "https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main" {instance id=1, parent internal id=1, parent id=TeamCityDotNet_HttpsGithubComAnRimkusTeamCityDotNetGitRefsHeadsMain, description: "https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main"}
+[10:02:44]i:	 [Collecting changes in 1 VCS root] Loading current repository state for VCS root 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main' (7s)
+[10:02:44]i:		 [Loading current repository state for VCS root 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main'] VCS root 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main': git -c credential.helper= ls-remote origin
+[10:02:52]i:	 [Collecting changes in 1 VCS root] Detecting changes in VCS root 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main' (used in 'Build')
+[10:02:52]i:	 [Collecting changes in 1 VCS root] Will collect changes for 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main' starting from revision 1f8e58a4cfda6d984a63f7c8899f92e217b7a098
+[10:02:52] :	 [Collecting changes in 1 VCS root] Compute revision for 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main'
+[10:02:52] :		 [Compute revision for 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main'] Upper limit revision: 1f8e58a4cfda6d984a63f7c8899f92e217b7a098
+[10:02:52]i:		 [Compute revision for 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main'] MaxModId = null
+[10:02:52] :		 [Compute revision for 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main'] The first revision that was detected in the branch refs/heads/main: 1f8e58a4cfda6d984a63f7c8899f92e217b7a098
+[10:02:52] :		 [Compute revision for 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main'] Cannot find modification in TeamCity database with revision 1f8e58a4cfda6d984a63f7c8899f92e217b7a098
+[10:02:52] :		 [Compute revision for 'https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main'] Computed revision: 1f8e58a4cfda6d984a63f7c8899f92e217b7a098
+[10:02:52] : Starting the build on the agent "ra22-vm"
+[10:02:57]i: Agent time zone: UTC
+[10:02:57]i: Agent is running under JRE: 11.0.16.1+9-LTS
+[10:02:58] : Updating tools for build
+[10:02:58] :	 [Updating tools for build] Found 1 tool used by the build: NuGet.CommandLine.4.5.0
+[10:02:58] :	 [Updating tools for build] Tool NuGet.CommandLine.4.5.0 updated successfully
+[10:02:59]i: Preparing performance monitoring data directory: C:\TeamCity\buildAgent\system\perfmon
+[10:02:59]i: Performance monitor is using command line: [cscript, C:\TeamCity\buildAgent\system\perfmon\scripts/perfmon.vbs, C:\TeamCity\buildAgent\system\perfmon\temp\1\perfmon.csv, 1000]
+[10:02:59]i: Starting performance monitoring process
+[10:03:01]i: Performance monitoring process started
+[10:03:01] : Clearing temporary directory: C:\TeamCity\buildAgent\temp\buildTmp
+[10:03:01] : Publishing internal artifacts
+[10:03:01] :	 [Publishing internal artifacts] Publishing 1 file using [WebPublisher]
+[10:03:01] :	 [Publishing internal artifacts] Publishing 1 file using [ArtifactsCachePublisherImpl]
+[10:03:01]i:	 [Publishing internal artifacts] Will publish 1 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:03:02] : Full checkout enforced. Reason: [Checkout directory is empty or doesn't exist]
+[10:03:02] : Will perform clean checkout. Reason: Checkout directory is empty or doesn't exist
+[10:03:02] : Checkout directory: C:\TeamCity\buildAgent\work\326ab781f8614fac
+[10:03:02] : Updating sources: auto checkout (on agent) (4s)
+[10:03:02] :	 [Updating sources] Will use agent side checkout
+[10:03:02] :	 [Updating sources] VCS Root: https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main (4s)
+[10:03:02] :		 [VCS Root: https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main] revision: 1f8e58a4cfda6d984a63f7c8899f92e217b7a098
+[10:03:02]i:		 [VCS Root: https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main] Mirrors automatically enabled
+[10:03:02] :		 [VCS Root: https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main] Git version: 2.38.1.0
+[10:03:02] :		 [VCS Root: https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main] Update git mirror (C:\TeamCity\buildAgent\system\git\git-E889EC65.git) (2s)
+[10:03:02] :			 [Update git mirror (C:\TeamCity\buildAgent\system\git\git-E889EC65.git)] "C:\Program Files\Git\bin\git.exe" init --bare --initial-branch=main
+[10:03:02] :			 [Update git mirror (C:\TeamCity\buildAgent\system\git\git-E889EC65.git)] "C:\Program Files\Git\bin\git.exe" config http.sslCAInfo
+[10:03:02] :			 [Update git mirror (C:\TeamCity\buildAgent\system\git\git-E889EC65.git)] "C:\Program Files\Git\bin\git.exe" config --unset http.sslCAInfo
+[10:03:03] :			 [Update git mirror (C:\TeamCity\buildAgent\system\git\git-E889EC65.git)] Local clone state requires 'git fetch'.
+[10:03:03] :			 [Update git mirror (C:\TeamCity\buildAgent\system\git\git-E889EC65.git)] "C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main (1s)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Enumerating objects: 195, done.        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   0% (1/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   1% (2/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   2% (4/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   3% (6/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   4% (8/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   5% (10/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   6% (12/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   7% (14/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   8% (16/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:   9% (18/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  10% (20/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  11% (22/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  12% (24/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  13% (26/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  14% (28/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  15% (30/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  16% (32/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  17% (34/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  18% (36/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  19% (38/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  20% (39/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  21% (41/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  22% (43/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  23% (45/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  24% (47/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  25% (49/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  26% (51/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  27% (53/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  28% (55/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  29% (57/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  30% (59/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  31% (61/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  32% (63/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  33% (65/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  34% (67/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  35% (69/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  36% (71/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  37% (73/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  38% (75/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  39% (77/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  40% (78/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  41% (80/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  42% (82/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  43% (84/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  44% (86/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  45% (88/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  46% (90/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  47% (92/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  48% (94/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  49% (96/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  50% (98/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  51% (100/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  52% (102/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  53% (104/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  54% (106/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  55% (108/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  56% (110/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  57% (112/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  58% (114/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  59% (116/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  60% (117/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  61% (119/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  62% (121/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  63% (123/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  64% (125/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  65% (127/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  66% (129/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  67% (131/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  68% (133/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  69% (135/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  70% (137/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  71% (139/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  72% (141/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  73% (143/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  74% (145/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  75% (147/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  76% (149/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  77% (151/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  78% (153/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  79% (155/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  80% (156/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  81% (158/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  82% (160/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  83% (162/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  84% (164/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  85% (166/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  86% (168/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  87% (170/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  88% (172/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  89% (174/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  90% (176/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  91% (178/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  92% (180/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  93% (182/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  94% (184/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  95% (186/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  96% (188/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  97% (190/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  98% (192/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects:  99% (194/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects: 100% (195/195)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Counting objects: 100% (195/195), done.        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   0% (1/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   1% (2/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   2% (3/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   3% (5/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   4% (6/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   5% (7/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   6% (9/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   7% (10/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   8% (12/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:   9% (13/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  10% (14/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  11% (16/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  12% (17/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  13% (19/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  14% (20/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  15% (21/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  16% (23/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  17% (24/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  18% (26/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  19% (27/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  20% (28/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  21% (30/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  22% (31/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  23% (32/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  24% (34/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  25% (35/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  26% (37/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  27% (38/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  28% (39/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  29% (41/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  30% (42/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  31% (44/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  32% (45/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  33% (46/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  34% (48/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  35% (49/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  36% (51/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  37% (52/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  38% (53/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  39% (55/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  40% (56/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  41% (57/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  42% (59/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  43% (60/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  44% (62/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  45% (63/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  46% (64/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  47% (66/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  48% (67/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  49% (69/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  50% (70/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  51% (71/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  52% (73/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  53% (74/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  54% (76/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  55% (77/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  56% (78/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  57% (80/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  58% (81/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  59% (83/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  60% (84/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  61% (85/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  62% (87/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  63% (88/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  64% (89/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  65% (91/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  66% (92/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  67% (94/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  68% (95/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  69% (96/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  70% (98/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  71% (99/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  72% (101/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  73% (102/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  74% (103/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  75% (105/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  76% (106/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  77% (108/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  78% (109/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  79% (110/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  80% (112/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  81% (113/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  82% (114/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  83% (116/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  84% (117/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  85% (119/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  86% (120/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  87% (121/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  88% (123/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  89% (124/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  90% (126/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  91% (127/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  92% (128/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  93% (130/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  94% (131/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  95% (133/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  96% (134/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  97% (135/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  98% (137/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects:  99% (138/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects: 100% (139/139)        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Compressing objects: 100% (139/139), done.        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   0% (1/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   1% (2/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   2% (4/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   3% (6/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   4% (8/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   5% (10/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   6% (12/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   7% (14/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   8% (16/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:   9% (18/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  10% (20/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  11% (22/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  12% (24/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  13% (26/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  14% (28/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  15% (30/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  16% (32/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  17% (34/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  18% (36/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  19% (38/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  20% (39/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  21% (41/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  22% (43/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  23% (45/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  24% (47/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  25% (49/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  26% (51/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  27% (53/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  28% (55/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  29% (57/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  30% (59/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  31% (61/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  32% (63/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  33% (65/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  34% (67/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  35% (69/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  36% (71/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  37% (73/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  38% (75/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  39% (77/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  40% (78/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  41% (80/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  42% (82/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  43% (84/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  44% (86/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  45% (88/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  46% (90/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  47% (92/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  48% (94/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  49% (96/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  50% (98/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  51% (100/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  52% (102/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  53% (104/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  54% (106/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  55% (108/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  56% (110/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  57% (112/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  58% (114/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  59% (116/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  60% (117/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  61% (119/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  62% (121/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  63% (123/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  64% (125/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  65% (127/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  66% (129/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  67% (131/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  68% (133/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  69% (135/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  70% (137/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  71% (139/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  72% (141/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  73% (143/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  74% (145/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  75% (147/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  76% (149/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  77% (151/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  78% (153/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  79% (155/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  80% (156/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  81% (158/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  82% (160/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  83% (162/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  84% (164/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  85% (166/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  86% (168/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  87% (170/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  88% (172/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  89% (174/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  90% (176/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  91% (178/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  92% (180/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  93% (182/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  94% (184/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  95% (186/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  96% (188/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  97% (190/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  98% (192/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] remote: Total 195 (delta 53), reused 195 (delta 53), pack-reused 0        
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects:  99% (194/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects: 100% (195/195)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Receiving objects: 100% (195/195), 5.75 MiB | 20.80 MiB/s, done.
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:   0% (0/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:   1% (1/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:   3% (2/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:   5% (3/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:   7% (4/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:   9% (5/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  11% (6/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  13% (7/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  15% (8/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  16% (9/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  18% (10/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  20% (11/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  22% (12/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  24% (13/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  26% (14/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  28% (15/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  30% (16/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  32% (17/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  33% (18/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  35% (19/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  37% (20/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  39% (21/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  41% (22/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  43% (23/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  45% (24/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  47% (25/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  49% (26/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  50% (27/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  52% (28/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  54% (29/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  56% (30/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  58% (31/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  60% (32/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  62% (33/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  64% (34/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  66% (35/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  67% (36/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  69% (37/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  71% (38/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  73% (39/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  75% (40/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  77% (41/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  79% (42/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  81% (43/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  83% (44/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  84% (45/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  86% (46/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  88% (47/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  90% (48/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  92% (49/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  94% (50/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  96% (51/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas:  98% (52/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas: 100% (53/53)
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] Resolving deltas: 100% (53/53), done.
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main] From https://github.com/AnRimkus/TeamCityDotNet
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main]  * [new branch]      main       -> main
+[10:03:04]i:				 ["C:\Program Files\Git\bin\git.exe" -c credential.helper= fetch --progress --recurse-submodules=no origin +refs/heads/main:refs/heads/main]  * [new branch]      main       -> origin/main
+[10:03:04] :			 [Update git mirror (C:\TeamCity\buildAgent\system\git\git-E889EC65.git)] "C:\Program Files\Git\bin\git.exe" log -n1 --pretty=format:%H%x20%s 1f8e58a4cfda6d984a63f7c8899f92e217b7a098 --
+[10:03:05] :			 [Update git mirror (C:\TeamCity\buildAgent\system\git\git-E889EC65.git)] "C:\Program Files\Git\bin\git.exe" pack-refs --all
+[10:03:05] :		 [VCS Root: https://github.com/AnRimkus/TeamCityDotNet.git#refs/heads/main] Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac) (1s)
+[10:03:05] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] The .git directory is missing in 'C:\TeamCity\buildAgent\work\326ab781f8614fac'. Running 'git init'...
+[10:03:05] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" init --initial-branch=main
+[10:03:05] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" config lfs.storage C:\TeamCity\buildAgent\system\git\git-E889EC65.git\lfs
+[10:03:05] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" config core.sparseCheckout true
+[10:03:05] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" config http.sslCAInfo
+[10:03:05] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" config --unset http.sslCAInfo
+[10:03:05] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" show-ref
+[10:03:05] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" -c credential.helper= ls-remote origin
+[10:03:06] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" show-ref refs/remotes/origin/main
+[10:03:06] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" log -n1 --pretty=format:%H%x20%s 1f8e58a4cfda6d984a63f7c8899f92e217b7a098 --
+[10:03:06] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] No 'git fetch' required: commit '1f8e58a4cfda6d984a63f7c8899f92e217b7a098' is in the local repository clone pointed by 'refs/remotes/origin/main'.
+[10:03:06] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" branch
+[10:03:06] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" -c credential.helper= reset --hard 1f8e58a4cfda6d984a63f7c8899f92e217b7a098
+[10:03:06] :			 [Update checkout directory (C:\TeamCity\buildAgent\work\326ab781f8614fac)] "C:\Program Files\Git\bin\git.exe" branch --set-upstream-to=refs/remotes/origin/main
+[10:03:07] : Build preparation done
+[10:03:07] : Step 1/2: Restore Dependencies (NuGet Installer) (14s)
+[10:03:07] :	 [Step 1/2] scan: Searching for nuget.config files
+[10:03:07] :		 [scan] Found packages folder: C:\TeamCity\buildAgent\work\326ab781f8614fac\packages
+[10:03:07] :		 [scan] No repositories.config found at C:\TeamCity\buildAgent\work\326ab781f8614fac\packages\repositories.config
+[10:03:08] :		 [scan] Scanning projects in solution file: C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln
+[10:03:08] :		 [scan] Found project C:\TeamCity\buildAgent\work\326ab781f8614fac\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj
+[10:03:08] :	 [Step 1/2] restore: Restoring NuGet packages for eShopLegacyWebForms.sln (13s)
+[10:03:08] :		 [restore] Starting: C:\TeamCity\buildAgent\tools\NuGet.CommandLine.4.5.0\tools\NuGet.exe restore C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln
+[10:03:08] :		 [restore] in directory: C:\TeamCity\buildAgent\work\326ab781f8614fac
+[10:03:10] :		 [restore] MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin\amd64'.
+[10:03:12] :		 [restore] Restoring NuGet package Antlr.3.5.0.2.
+[10:03:12] :		 [restore] Restoring NuGet package AspNet.ScriptManager.jQuery.3.3.1.
+[10:03:12] :		 [restore] Restoring NuGet package AspNet.ScriptManager.bootstrap.4.3.1.
+[10:03:12] :		 [restore] Restoring NuGet package Autofac.4.9.1.
+[10:03:12] :		 [restore] Restoring NuGet package Autofac.Web.4.0.0.
+[10:03:12] :		 [restore] Restoring NuGet package bootstrap.4.3.1.
+[10:03:12] :		 [restore] Restoring NuGet package EntityFramework.6.2.0.
+[10:03:12] :		 [restore] Restoring NuGet package jQuery.3.3.1.
+[10:03:12] :		 [restore] Restoring NuGet package Microsoft.ApplicationInsights.2.9.1.
+[10:03:12] :		 [restore] Restoring NuGet package Microsoft.ApplicationInsights.Agent.Intercept.2.4.0.
+[10:03:12] :		 [restore] Restoring NuGet package Microsoft.ApplicationInsights.DependencyCollector.2.9.1.
+[10:03:12] :		 [restore] Restoring NuGet package Microsoft.ApplicationInsights.PerfCounterCollector.2.9.1.
+[10:03:12] :		 [restore] Restoring NuGet package Microsoft.ApplicationInsights.Web.2.9.1.
+[10:03:12] :		 [restore] Restoring NuGet package Microsoft.ApplicationInsights.WindowsServer.2.9.1.
+[10:03:12] :		 [restore] Restoring NuGet package Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1.
+[10:03:12] :		 [restore] Restoring NuGet package Microsoft.AspNet.FriendlyUrls.1.0.2.
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/aspnet.scriptmanager.bootstrap/4.3.1/aspnet.scriptmanager.bootstrap.4.3.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/antlr/3.5.0.2/antlr.3.5.0.2.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/aspnet.scriptmanager.jquery/3.3.1/aspnet.scriptmanager.jquery.3.3.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/autofac/4.9.1/autofac.4.9.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/autofac.web/4.0.0/autofac.web.4.0.0.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/bootstrap/4.3.1/bootstrap.4.3.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/entityframework/6.2.0/entityframework.6.2.0.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/jquery/3.3.1/jquery.3.3.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights/2.9.1/microsoft.applicationinsights.2.9.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.dependencycollector/2.9.1/microsoft.applicationinsights.dependencycollector.2.9.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.perfcountercollector/2.9.1/microsoft.applicationinsights.perfcountercollector.2.9.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.web/2.9.1/microsoft.applicationinsights.web.2.9.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.windowsserver/2.9.1/microsoft.applicationinsights.windowsserver.2.9.1.nupkg
+[10:03:12] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/antlr/3.5.0.2/antlr.3.5.0.2.nupkg 18ms
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.agent.intercept/2.4.0/microsoft.applicationinsights.agent.intercept.2.4.0.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.windowsserver.telemetrychannel/2.9.1/microsoft.applicationinsights.windowsserver.telemetrychannel.2.9.1.nupkg
+[10:03:12] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.friendlyurls/1.0.2/microsoft.aspnet.friendlyurls.1.0.2.nupkg
+[10:03:12] :		 [restore] Installing Antlr 3.5.0.2.
+[10:03:12] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/aspnet.scriptmanager.bootstrap/4.3.1/aspnet.scriptmanager.bootstrap.4.3.1.nupkg 55ms
+[10:03:12] :		 [restore] Installing AspNet.ScriptManager.bootstrap 4.3.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/autofac/4.9.1/autofac.4.9.1.nupkg 63ms
+[10:03:13] :		 [restore] Installing Autofac 4.9.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/autofac.web/4.0.0/autofac.web.4.0.0.nupkg 66ms
+[10:03:13] :		 [restore] Installing Autofac.Web 4.0.0.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/entityframework/6.2.0/entityframework.6.2.0.nupkg 68ms
+[10:03:13] :		 [restore] Installing EntityFramework 6.2.0.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/bootstrap/4.3.1/bootstrap.4.3.1.nupkg 71ms
+[10:03:13] :		 [restore] Installing bootstrap 4.3.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/jquery/3.3.1/jquery.3.3.1.nupkg 73ms
+[10:03:13] :		 [restore] Installing jQuery 3.3.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights/2.9.1/microsoft.applicationinsights.2.9.1.nupkg 77ms
+[10:03:13] :		 [restore] Installing Microsoft.ApplicationInsights 2.9.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.dependencycollector/2.9.1/microsoft.applicationinsights.dependencycollector.2.9.1.nupkg 84ms
+[10:03:13] :		 [restore] Installing Microsoft.ApplicationInsights.DependencyCollector 2.9.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.web/2.9.1/microsoft.applicationinsights.web.2.9.1.nupkg 96ms
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.perfcountercollector/2.9.1/microsoft.applicationinsights.perfcountercollector.2.9.1.nupkg 97ms
+[10:03:13] :		 [restore] Installing Microsoft.ApplicationInsights.PerfCounterCollector 2.9.1.
+[10:03:13] :		 [restore] Installing Microsoft.ApplicationInsights.Web 2.9.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.agent.intercept/2.4.0/microsoft.applicationinsights.agent.intercept.2.4.0.nupkg 473ms
+[10:03:13] :		 [restore] Installing Microsoft.ApplicationInsights.Agent.Intercept 2.4.0.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.windowsserver.telemetrychannel/2.9.1/microsoft.applicationinsights.windowsserver.telemetrychannel.2.9.1.nupkg 477ms
+[10:03:13] :		 [restore] Installing Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel 2.9.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/aspnet.scriptmanager.jquery/3.3.1/aspnet.scriptmanager.jquery.3.3.1.nupkg 530ms
+[10:03:13] :		 [restore] Installing AspNet.ScriptManager.jQuery 3.3.1.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.friendlyurls/1.0.2/microsoft.aspnet.friendlyurls.1.0.2.nupkg 509ms
+[10:03:13] :		 [restore] Installing Microsoft.AspNet.FriendlyUrls 1.0.2.
+[10:03:13] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.applicationinsights.windowsserver/2.9.1/microsoft.applicationinsights.windowsserver.2.9.1.nupkg 928ms
+[10:03:13] :		 [restore] Installing Microsoft.ApplicationInsights.WindowsServer 2.9.1.
+[10:03:14] :		 [restore] Adding package 'Autofac.Web.4.0.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Adding package 'AspNet.ScriptManager.jQuery.3.3.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Added package 'Autofac.Web.4.0.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Restoring NuGet package Microsoft.AspNet.FriendlyUrls.Core.1.0.2.
+[10:03:14] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.friendlyurls.core/1.0.2/microsoft.aspnet.friendlyurls.core.1.0.2.nupkg
+[10:03:14] :		 [restore] Adding package 'AspNet.ScriptManager.bootstrap.4.3.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Adding package 'Microsoft.AspNet.FriendlyUrls.1.0.2' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Adding package 'Microsoft.ApplicationInsights.DependencyCollector.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Added package 'AspNet.ScriptManager.bootstrap.4.3.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Restoring NuGet package Microsoft.AspNet.ScriptManager.MSAjax.5.0.0.
+[10:03:14] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.scriptmanager.msajax/5.0.0/microsoft.aspnet.scriptmanager.msajax.5.0.0.nupkg
+[10:03:14] :		 [restore] Added package 'Microsoft.ApplicationInsights.DependencyCollector.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Restoring NuGet package Microsoft.AspNet.ScriptManager.WebForms.5.0.0.
+[10:03:14] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.scriptmanager.webforms/5.0.0/microsoft.aspnet.scriptmanager.webforms.5.0.0.nupkg
+[10:03:14] :		 [restore] Added package 'AspNet.ScriptManager.jQuery.3.3.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:14] :		 [restore] Restoring NuGet package Microsoft.AspNet.TelemetryCorrelation.1.0.5.
+[10:03:14] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.telemetrycorrelation/1.0.5/microsoft.aspnet.telemetrycorrelation.1.0.5.nupkg
+[10:03:15] :		 [restore] Added package 'Microsoft.AspNet.FriendlyUrls.1.0.2' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:15] :		 [restore] Restoring NuGet package Microsoft.AspNet.Web.Optimization.1.1.3.
+[10:03:15] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.web.optimization/1.1.3/microsoft.aspnet.web.optimization.1.1.3.nupkg
+[10:03:15] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.scriptmanager.msajax/5.0.0/microsoft.aspnet.scriptmanager.msajax.5.0.0.nupkg 397ms
+[10:03:15] :		 [restore] Installing Microsoft.AspNet.ScriptManager.MSAjax 5.0.0.
+[10:03:15] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.telemetrycorrelation/1.0.5/microsoft.aspnet.telemetrycorrelation.1.0.5.nupkg 380ms
+[10:03:15] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.friendlyurls.core/1.0.2/microsoft.aspnet.friendlyurls.core.1.0.2.nupkg 440ms
+[10:03:15] :		 [restore] Installing Microsoft.AspNet.TelemetryCorrelation 1.0.5.
+[10:03:15] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.scriptmanager.webforms/5.0.0/microsoft.aspnet.scriptmanager.webforms.5.0.0.nupkg 391ms
+[10:03:15] :		 [restore] Installing Microsoft.AspNet.ScriptManager.WebForms 5.0.0.
+[10:03:15] :		 [restore] Installing Microsoft.AspNet.FriendlyUrls.Core 1.0.2.
+[10:03:15] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.web.optimization/1.1.3/microsoft.aspnet.web.optimization.1.1.3.nupkg 364ms
+[10:03:15] :		 [restore] Installing Microsoft.AspNet.Web.Optimization 1.1.3.
+[10:03:15] :		 [restore] Adding package 'Microsoft.AspNet.FriendlyUrls.Core.1.0.2' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:15] :		 [restore] Added package 'Microsoft.AspNet.FriendlyUrls.Core.1.0.2' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:15] :		 [restore] Restoring NuGet package Microsoft.AspNet.Web.Optimization.WebForms.1.1.3.
+[10:03:15] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.web.optimization.webforms/1.1.3/microsoft.aspnet.web.optimization.webforms.1.1.3.nupkg
+[10:03:16] :		 [restore] Adding package 'Microsoft.AspNet.TelemetryCorrelation.1.0.5' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Adding package 'Microsoft.ApplicationInsights.Web.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'Microsoft.AspNet.TelemetryCorrelation.1.0.5' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.codedom.providers.dotnetcompilerplatform/2.0.1/microsoft.codedom.providers.dotnetcompilerplatform.2.0.1.nupkg
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.codedom.providers.dotnetcompilerplatform/2.0.1/microsoft.codedom.providers.dotnetcompilerplatform.2.0.1.nupkg 6ms
+[10:03:16] :		 [restore] Installing Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1.
+[10:03:16] :		 [restore] Added package 'Microsoft.ApplicationInsights.Web.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package Microsoft.Net.Compilers.2.10.0.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.compilers/2.10.0/microsoft.net.compilers.2.10.0.nupkg
+[10:03:16] :		 [restore] Adding package 'Microsoft.ApplicationInsights.WindowsServer.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Adding package 'Microsoft.AspNet.Web.Optimization.1.1.3' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'Microsoft.ApplicationInsights.WindowsServer.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package Microsoft.Web.Infrastructure.1.0.0.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/microsoft.web.infrastructure/1.0.0/microsoft.web.infrastructure.1.0.0.nupkg
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.compilers/2.10.0/microsoft.net.compilers.2.10.0.nupkg 35ms
+[10:03:16] :		 [restore] Installing Microsoft.Net.Compilers 2.10.0.
+[10:03:16] :		 [restore] Added package 'Microsoft.AspNet.Web.Optimization.1.1.3' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package Modernizr.2.8.3.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/modernizr/2.8.3/modernizr.2.8.3.nupkg
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/modernizr/2.8.3/modernizr.2.8.3.nupkg 280ms
+[10:03:16] :		 [restore] Installing Modernizr 2.8.3.
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.web.optimization.webforms/1.1.3/microsoft.aspnet.web.optimization.webforms.1.1.3.nupkg 384ms
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/microsoft.web.infrastructure/1.0.0/microsoft.web.infrastructure.1.0.0.nupkg 292ms
+[10:03:16] :		 [restore] Installing Microsoft.Web.Infrastructure 1.0.0.0.
+[10:03:16] :		 [restore] Installing Microsoft.AspNet.Web.Optimization.WebForms 1.1.3.
+[10:03:16] :		 [restore] Adding package 'Microsoft.AspNet.ScriptManager.MSAjax.5.0.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Adding package 'Antlr.3.5.0.2' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'Antlr.3.5.0.2' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package Newtonsoft.Json.12.0.1.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg
+[10:03:16] :		 [restore] Added package 'Microsoft.AspNet.ScriptManager.MSAjax.5.0.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package popper.js.1.14.3.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/popper.js/1.14.3/popper.js.1.14.3.nupkg
+[10:03:16] :		 [restore] Adding package 'Microsoft.AspNet.Web.Optimization.WebForms.1.1.3' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Adding package 'Modernizr.2.8.3' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'Modernizr.2.8.3' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package Respond.1.4.2.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/respond/1.4.2/respond.1.4.2.nupkg
+[10:03:16] :		 [restore] Adding package 'Microsoft.Web.Infrastructure.1.0.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'Microsoft.AspNet.Web.Optimization.WebForms.1.1.3' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package System.Diagnostics.DiagnosticSource.4.5.1.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/4.5.1/system.diagnostics.diagnosticsource.4.5.1.nupkg
+[10:03:16] :		 [restore] Added package 'Microsoft.Web.Infrastructure.1.0.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package System.IO.Compression.ZipFile.4.3.0.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/system.io.compression.zipfile/4.3.0/system.io.compression.zipfile.4.3.0.nupkg
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/system.io.compression.zipfile/4.3.0/system.io.compression.zipfile.4.3.0.nupkg 9ms
+[10:03:16] :		 [restore] Installing System.IO.Compression.ZipFile 4.3.0.
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/respond/1.4.2/respond.1.4.2.nupkg 23ms
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/4.5.1/system.diagnostics.diagnosticsource.4.5.1.nupkg 13ms
+[10:03:16] :		 [restore] Installing System.Diagnostics.DiagnosticSource 4.5.1.
+[10:03:16] :		 [restore] Installing Respond 1.4.2.
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg 114ms
+[10:03:16] :		 [restore] Installing Newtonsoft.Json 12.0.1.
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/popper.js/1.14.3/popper.js.1.14.3.nupkg 85ms
+[10:03:16] :		 [restore] Installing popper.js 1.14.3.
+[10:03:16] :		 [restore] Adding package 'Microsoft.AspNet.ScriptManager.WebForms.5.0.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Adding package 'Respond.1.4.2' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'Microsoft.AspNet.ScriptManager.WebForms.5.0.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Restoring NuGet package WebGrease.1.6.0.
+[10:03:16] :		 [restore]   GET https://api.nuget.org/v3-flatcontainer/webgrease/1.6.0/webgrease.1.6.0.nupkg
+[10:03:16] :		 [restore] Added package 'Respond.1.4.2' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore]   OK https://api.nuget.org/v3-flatcontainer/webgrease/1.6.0/webgrease.1.6.0.nupkg 8ms
+[10:03:16] :		 [restore] Installing WebGrease 1.6.0.
+[10:03:16] :		 [restore] Adding package 'Microsoft.ApplicationInsights.PerfCounterCollector.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'Microsoft.ApplicationInsights.PerfCounterCollector.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Adding package 'jQuery.3.3.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'jQuery.3.3.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Adding package 'Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:16] :		 [restore] Added package 'Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Adding package 'System.IO.Compression.ZipFile.4.3.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Adding package 'System.Diagnostics.DiagnosticSource.4.5.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Added package 'System.Diagnostics.DiagnosticSource.4.5.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Added package 'System.IO.Compression.ZipFile.4.3.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Adding package 'WebGrease.1.6.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Added package 'WebGrease.1.6.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Adding package 'popper.js.1.14.3' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Added package 'popper.js.1.14.3' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Adding package 'Microsoft.ApplicationInsights.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Added package 'Microsoft.ApplicationInsights.2.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Adding package 'Autofac.4.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Adding package 'bootstrap.4.3.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Added package 'Autofac.4.9.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Adding package 'Microsoft.ApplicationInsights.Agent.Intercept.2.4.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Added package 'bootstrap.4.3.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:17] :		 [restore] Added package 'Microsoft.ApplicationInsights.Agent.Intercept.2.4.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:18] :		 [restore] Adding package 'Newtonsoft.Json.12.0.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:18] :		 [restore] Added package 'Newtonsoft.Json.12.0.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:18] :		 [restore] Adding package 'EntityFramework.6.2.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:18] :		 [restore] Added package 'EntityFramework.6.2.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:20] :		 [restore] Adding package 'Microsoft.Net.Compilers.2.10.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:20] :		 [restore] Adding package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:20] :		 [restore] Added package 'Microsoft.Net.Compilers.2.10.0' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:21] :		 [restore] Added package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1' to folder 'C:\TeamCity\buildAgent\work\326ab781f8614fac\packages'
+[10:03:21] :		 [restore] 
+[10:03:21] :		 [restore] NuGet Config files used:
+[10:03:21] :		 [restore]     C:\Users\ra\AppData\Roaming\NuGet\NuGet.Config
+[10:03:21] :		 [restore] 
+[10:03:21] :		 [restore] Feeds used:
+[10:03:21] :		 [restore]     https://api.nuget.org/v3/index.json
+[10:03:21] :		 [restore] 
+[10:03:21] :		 [restore] Installed:
+[10:03:21] :		 [restore]     32 package(s) to packages.config projects
+[10:03:21] :		 [restore] Process exited with code 0
+[10:03:21]E: Step 2/2: Build Package (MSBuild) (27s)
+[10:03:21] :	 [Step 2/2] Starting: C:\TeamCity\buildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.MsBuildBootstrap.exe /workdir:C:\TeamCity\buildAgent\work\326ab781f8614fac /msbuildPath:C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe
+[10:03:21] :	 [Step 2/2] in directory: C:\TeamCity\buildAgent\work\326ab781f8614fac
+[10:03:48]E:	 [Step 2/2] eShopLegacyWebForms.sln.teamcity: Build target: TeamCity_Generated_Build
+[10:03:48]E:		 [eShopLegacyWebForms.sln.teamcity] TeamCity_Generated_Build
+[10:03:48]E:			 [TeamCity_Generated_Build] MSBuild
+[10:03:48]E:				 [MSBuild] eShopLegacyWebForms.sln: Build targets: Clean;build
+[10:03:48] :					 [eShopLegacyWebForms.sln] ValidateSolutionConfiguration
+[10:03:48] :						 [ValidateSolutionConfiguration] Building solution configuration "Debug|Any CPU".
+[10:03:48]E:					 [eShopLegacyWebForms.sln] Clean
+[10:03:48]E:						 [Clean] MSBuild
+[10:03:48]E:							 [MSBuild] src\eShopLegacyWebForms\eShopLegacyWebForms.csproj: Build target: Clean
+[10:03:48]E:								 [src\eShopLegacyWebForms\eShopLegacyWebForms.csproj] C:\TeamCity\buildAgent\work\326ab781f8614fac\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj(407, 3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+[10:03:48]W:	 [Step 2/2] Process exited with code 1
+[10:03:48]W:	 [Step 2/2] MSBuild output
+[10:03:48]W:		 [MSBuild output] Start MSBuild...
+[10:03:48]W:		 [MSBuild output] 'C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe' '"@C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln.teamcity.msbuild.tcargs" C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln.teamcity'
+[10:03:48]W:		 [MSBuild output] working dir = 'C:\TeamCity\buildAgent\work\326ab781f8614fac'
+[10:03:48]W:		 [MSBuild output] Microsoft (R) Build Engine version 14.0.23107.0
+[10:03:48]W:		 [MSBuild output] Copyright (C) Microsoft Corporation. All rights reserved.
+[10:03:48]W:		 [MSBuild output] 
+[10:03:48]W:		 [MSBuild output] Build started 2/13/2023 10:03:48 AM.
+[10:03:48]W:		 [MSBuild output] Project "C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln.teamcity" on node 1 (TeamCity_Generated_Build target(s)).
+[10:03:48]W:		 [MSBuild output] Project "C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln.teamcity" (1) is building "C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln" (2) on node 1 (Clean;build target(s)).
+[10:03:48]W:		 [MSBuild output] ValidateSolutionConfiguration:
+[10:03:48]W:		 [MSBuild output]   Building solution configuration "Debug|Any CPU".
+[10:03:48]W:		 [MSBuild output] Project "C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln" (2) is building "C:\TeamCity\buildAgent\work\326ab781f8614fac\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj" (3) on node 1 (Clean target(s)).
+[10:03:48]W:		 [MSBuild output] C:\TeamCity\buildAgent\work\326ab781f8614fac\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj(407,3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+[10:03:48]W:		 [MSBuild output] Done Building Project "C:\TeamCity\buildAgent\work\326ab781f8614fac\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj" (Clean target(s)) -- FAILED.
+[10:03:48]W:		 [MSBuild output] Done Building Project "C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln" (Clean;build target(s)) -- FAILED.
+[10:03:48]W:		 [MSBuild output] Done Building Project "C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln.teamcity" (TeamCity_Generated_Build target(s)) -- FAILED.
+[10:03:48]W:		 [MSBuild output] 
+[10:03:48]W:		 [MSBuild output] Build FAILED.
+[10:03:48]W:		 [MSBuild output] 
+[10:03:48]W:		 [MSBuild output] "C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln.teamcity" (TeamCity_Generated_Build target) (1) ->
+[10:03:48]W:		 [MSBuild output] "C:\TeamCity\buildAgent\work\326ab781f8614fac\eShopLegacyWebForms.sln" (Clean;build target) (2) ->
+[10:03:48]W:		 [MSBuild output] "C:\TeamCity\buildAgent\work\326ab781f8614fac\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj" (Clean target) (3) ->
+[10:03:48]W:		 [MSBuild output]   C:\TeamCity\buildAgent\work\326ab781f8614fac\src\eShopLegacyWebForms\eShopLegacyWebForms.csproj(407,3): error MSB4019: The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" was not found. Confirm that the path in the <Import> declaration is correct, and that the file exists on disk.
+[10:03:48]W:		 [MSBuild output] 
+[10:03:48]W:		 [MSBuild output]     0 Warning(s)
+[10:03:48]W:		 [MSBuild output]     1 Error(s)
+[10:03:48]W:		 [MSBuild output] 
+[10:03:48]W:		 [MSBuild output] Time Elapsed 00:00:00.30
+[10:03:49]E:	 [Step 2/2] Process exited with code 1 (Step: Build Package (MSBuild))
+[10:03:48]E:	 [Step 2/2] Step Build Package (MSBuild) failed
+[10:03:48] : Publishing artifacts
+[10:03:48] :	 [Publishing artifacts] Collecting files to publish: [C:\TeamCity\buildAgent\temp\buildTmp\nuget760674752638174786packages\nuget.xml => .teamcity/nuget]
+[10:03:48] :	 [Publishing artifacts] Publishing 1 file using [WebPublisher]: C:/TeamCity/buildAgent/temp/buildTmp/nuget760674752638174786packages/nuget.xml => .teamcity/nuget
+[10:03:48] :	 [Publishing artifacts] Publishing 1 file using [ArtifactsCachePublisherImpl]: C:/TeamCity/buildAgent/temp/buildTmp/nuget760674752638174786packages/nuget.xml => .teamcity/nuget
+[10:03:49]i:	 [Publishing artifacts] Will publish 1 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:03:49]i: Stopping performance monitoring process
+[10:03:49]i: Performance monitoring process stopped
+[10:03:49]i: Publishing performance monitoring build stages data
+[10:03:49] : Publishing artifacts
+[10:03:49] :	 [Publishing artifacts] Collecting files to publish: [C:\TeamCity\buildAgent\system\perfmon\temp\1\perfmon.csv=>.teamcity/perfmon/, C:\TeamCity\buildAgent\temp\agentTmp\build_stages.txt=>.teamcity/perfmon/]
+[10:03:49] :	 [Publishing artifacts] Publishing 2 files using [WebPublisher]: C:/TeamCity/buildAgent/system/perfmon/temp/1/perfmon.csv, C:/TeamCity/buildAgent/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[10:03:49] :	 [Publishing artifacts] Publishing 2 files using [ArtifactsCachePublisherImpl]: C:/TeamCity/buildAgent/system/perfmon/temp/1/perfmon.csv, C:/TeamCity/buildAgent/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[10:03:49]i:	 [Publishing artifacts] Will publish 2 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:03:49] : Publishing internal artifacts
+[10:03:49] :	 [Publishing internal artifacts] Publishing 1 file using [WebPublisher]
+[10:03:49] :	 [Publishing internal artifacts] Publishing 1 file using [ArtifactsCachePublisherImpl]
+[10:03:49]i:	 [Publishing internal artifacts] Will publish 1 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:03:50] : Build finished
